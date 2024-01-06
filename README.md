@@ -1,12 +1,12 @@
 ## Example shinylive app
 
-1. Create an app (here I started from the example app from https://shinylive.io/r/examples/#hello-shiny). Save it to `code/app.R`.
+1. Create an app (here I started from the example app from https://shinylive.io/r/examples/#hello-shiny). Save it to (e.g.) `code/app.R`.
 2. Install `shinylive` and `httpuv`:
 ```
 BiocManager::install("posit-dev/r-shinylive")
 BiocManager::install("rstudio/httpuv")
 ```
-3. Render the app into an HTML file:
+3. Export the app to a directory that can then be served using `httpuv`:
 ```
 shinylive::export(appdir = "code", destdir = "docs")
 ```
