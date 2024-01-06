@@ -15,7 +15,12 @@ shinylive::export(appdir = "code", destdir = "docs")
 httpuv::runStaticServer("docs")
 ```
 5. Push (at least) the `docs` folder to GitHub.
-6. Set up GitHub Pages in the GitHub repository to serve the `docs/` folder from the `main` branch. 
+6. Set up GitHub Pages in the GitHub repository to serve the `docs` folder from the `main` branch. 
 ![](github-pages.png)
-7. Wait for a few minutes until everything is synced.
-8. Navigate to the GitHub Pages website to use the app. 
+7. Navigate to the GitHub Pages website to use the app. 
+
+### Resources
+
+- [https://github.com/RamiKrispin/shinylive-r](https://github.com/RamiKrispin/shinylive-r)
+- [https://github.com/posit-dev/shinylive](https://github.com/posit-dev/shinylive)
+- [https://shinylive.io/r/examples/#hello-shiny](https://shinylive.io/r/examples/#hello-shiny)
