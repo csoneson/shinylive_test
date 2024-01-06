@@ -1,4 +1,5 @@
 library(shiny)
+library(dplyr)
 
 ui <- fluidPage(
     titlePanel("Hello Shiny!"),
@@ -18,7 +19,7 @@ ui <- fluidPage(
 
 server <- function(input, output) {
     output$distPlot <- renderPlot({
-        x    <- faithful$waiting
+        x <- faithful |> dplyr::pull(waiting)
         bins <- seq(min(x), max(x), length.out = input$bins + 1)
         hist(x, breaks = bins, col = "#75AADB", border = "white",
              xlab = "Waiting time to next eruption (in mins)",
